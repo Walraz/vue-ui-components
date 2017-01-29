@@ -1,0 +1,9 @@
+{
+  "name": "vue-ui-components",
+  "version": "1.0.0",
+  "description": "Vue UI components",
+  "main": "dist/index.js",
+  "repository": "https://github.com/Walraz/vue-ui-components.git",
+  "author": "Rasmus Hallström",
+  "license": "MIT"
+}
