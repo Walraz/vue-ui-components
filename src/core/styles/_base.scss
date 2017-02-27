@@ -1,0 +1,24 @@
+@import '~normalize.css';
+
+* {
+  box-sizing: border-box;
+  &:focus {
+    outline: 0;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+#app {
+  display: flex;
+  height: 100%;
+}
+
+main {
+  display: flex;
+  flex-flow: column;
+  flex: 1 0 0;
+  height: 100%;
+}

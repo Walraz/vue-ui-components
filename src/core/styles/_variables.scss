@@ -1,0 +1,20 @@
+$primary-color: rgba(32, 36, 45, 1.00);
+$secondary-color: rgba(69, 81, 95, 1.00);
+$accent-color: rgba(2, 178, 228, 1.00);
+// $accent-color: rgba(222, 109, 118, 1.00);
+$primary-text: rgba(0,0,0,.87);
+$shadow-key-umbra-opacity: .2;
+$shadow-key-penumbra-opacity: .14;
+$shadow-ambient-shadow-opacity: .12;
+
+$shadow-2dp: 0 1px 5px rgba(#000, $shadow-key-umbra-opacity),
+            0 2px 2px rgba(#000, $shadow-key-penumbra-opacity),
+            0 3px 1px -2px rgba(#000, $shadow-ambient-shadow-opacity);
+
+$shadow-4dp: 0 2px 4px -1px rgba(#000, $shadow-key-umbra-opacity),
+            0 4px 5px rgba(#000, $shadow-key-penumbra-opacity),
+            0 1px 10px rgba(#000, $shadow-ambient-shadow-opacity);
+
+$shadow-8dp: 0 5px 5px -3px rgba(#000, $shadow-key-umbra-opacity),
+            0 8px 10px 1px rgba(#000, $shadow-key-penumbra-opacity),
+            0 3px 14px 2px rgba(#000, $shadow-ambient-shadow-opacity);

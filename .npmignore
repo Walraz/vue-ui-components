@@ -4,7 +4,7 @@ logs
 npm-debug.log*
 
 # Distribution/test directories
-dist
+src
 test
 
 # Dependency directories

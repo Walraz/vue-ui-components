@@ -1,0 +1,28 @@
+.ripple__circle {
+  position: absolute;
+  opacity: 1;
+  z-index: -1;
+  transition: opacity .75s ease;
+  border-radius: 50%;
+  transform: scale(0);
+  background: rgba(255, 255, 255, 0.30);
+  animation: ripple .75s forwards;
+}
+
+.ripple__circle--dark {
+  background: rgba(0, 0, 0, .12);
+}
+
+.ripple__trigger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes ripple {
+  to {
+    transform: scale(2.5)
+  }
+}
