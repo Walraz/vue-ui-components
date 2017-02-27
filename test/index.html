@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vue UI components</title>
+</head>
+
+<body>
+  <div id="app">
+    <vui-sidebar>
+      <vui-sidebar-button active text="Mail" icon="mail"></vui-sidebar-button>
+      <vui-sidebar-button text="Search" icon="search"></vui-sidebar-button>
+      <vui-sidebar-button text="Test" icon="people"></vui-sidebar-button>
+    </vui-sidebar>
+    <main>
+      <vui-header title="Vue UI Components">
+        <vui-header-button icon="settings"></vui-header-button>
+        <vui-header-button label="John Doe" icon="account_circle"></vui-header-button>
+      </vui-header>
+      <vui-content>
+        <vui-sidebar-panel title="Inbox" open-icon="inbox" :badge="32">
+          <vui-input value="Rasmus" label="Firstname"></vui-input>
+          <vui-input label="Lastname"></vui-input>
+          <vui-input label="Address" :disabled="true"></vui-input>
+          <vui-input label="City"></vui-input>
+          <vui-input label="Zipcode"></vui-input>
+          <vui-checkbox label="Checkbox 1" :value="true"></vui-checkbox>
+          <vui-checkbox label="Checkbox 2"></vui-checkbox>
+          <vui-checkbox label="Disabled checkbox" :disabled="true" :value="false"></vui-checkbox>
+          <vui-input v-model="selected2" :options="options" label="Grossery list"></vui-input>
+          <vui-input v-model="selected" :options="options" label="Grossery list" :disabled="true"></vui-input>
+          <div style="position: absolute; bottom: 0; width: calc(100% - 16px); z-index: 2">
+            <vui-button value="save" raised accent v-ripple></vui-button>
+          </div>
+        </vui-sidebar-panel>
+        <vui-content>
+          <vui-toolbar>
+          </vui-toolbar>
+          <!-- <h1>Test</h1> -->
+        </vui-content>
+      </vui-content>
+    </main>
+
+  </div>
+  <script src="bundle.js"></script>
+</body>
+
+</html>
